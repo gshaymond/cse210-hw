@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-    private static int guess;
+    
     
     static void Main(string[] args)
     {
