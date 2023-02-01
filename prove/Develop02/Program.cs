@@ -16,24 +16,24 @@ class Program
             if (menuInput == 1)
             {
                 Entry entry = new Entry();
-                string prompt = entry.promptGenerator();
+                string prompt = entry.PromptGenerator();
                 Console.WriteLine(prompt);
                 string journalEntry = Console.ReadLine();
-                entry.getDate();
+                entry.GetDate();
                 entry.input = journalEntry;
                 journal.entries.Add(entry);
             } 
             else if (menuInput == 2)
             {
-                journal.displayJournal();
+                journal.DisplayJournal();
             }
             else if (menuInput == 3)
             {
-                journal.readJournal();
+                journal.ReadJournal();
             }
             else if (menuInput == 4)
             {
-                journal.writeJournal();
+                journal.WriteJournal();
             }
             else
             {

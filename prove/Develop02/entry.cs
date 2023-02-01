@@ -7,7 +7,7 @@ public class Entry
     public string prompt;
     public string dateText;
     
-    public string promptGenerator()
+    public string PromptGenerator()
     {
         Random random = new Random();
 
@@ -24,12 +24,12 @@ public class Entry
 
         return randPrompt;
     }
-    public void getDate()
+    public void GetDate()
     {
         DateTime theDate = DateTime.Now;
         dateText = theDate.ToShortDateString();
     }
-    public void displayEntry()
+    public void DisplayEntry()
     {
         Console.WriteLine($"{dateText}: {prompt}\n\t{input}");
     }
