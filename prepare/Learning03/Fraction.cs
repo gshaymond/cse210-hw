@@ -18,4 +18,28 @@ public class Fraction {
         _top = nominator;
         _bottom = denominator;
     }
+
+    public int GetTopNum() {
+        return _top;
+    }
+    public void SetTopNum(int top) {
+        _top = top;
+    }
+
+    public int GetBottomNum() {
+        return _bottom;
+    }
+    public void SetBottomNum(int bottom) {
+        _bottom = bottom;
+    }
+
+    public string GetFractionValue() {
+        string fraction = $"{_top}/{_bottom}";
+        return fraction;
+    }
+
+    public double GetDecimalValue() {
+       return (double)_top / (double)_bottom;
+    }
 }
+
